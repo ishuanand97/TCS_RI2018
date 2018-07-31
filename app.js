@@ -1,10 +1,4 @@
-$("#state").scroll(function (event) {
-    event.preventDefault();
-    var target = "#legend-full-x";
-    $('html, body').animate({
-        scrollTop: $(target).offset().top
-    }, 2000);
-});
+
 
 function myFunction() {
     var x = document.getElementById("mySelect").value;
@@ -19,28 +13,64 @@ function myFunction() {
             document.getElementById("demo").innerHTML = newval;
             s = newval;
             var z;
-            if (s != NaN) {
+            
                 if (s > 0 && s < 50) {
                     z = "Good";
                     $('#severity').css("color", "#009966");
+                    $(".Good").show();
+                    $(".Moderate").hide();
+                    $(".Unhealthy-o").hide();
+                    $(".Unhealthy-r").hide();
+                    $(".Unhealthy-p").hide();
+                    $(".Hazardous").hide();
                 } else if (s > 51 && s < 100) {
                     z = "Satisfactory";
                     $('#severity').css("color", "#ffde33");
+                    $(".Good").hide();
+                    $(".Moderate").show();
+                    $(".Unhealthy-o").hide();
+                    $(".Unhealthy-r").hide();
+                    $(".Unhealthy-p").hide();
+                    $(".Hazardous").hide();
                 } else if (s > 101 & s < 200) {
                     z = "Moderately polluted";
                     $('#severity').css("color", "#ff9933");
+                    $(".Good").hide();
+                    $(".Moderate").hide();
+                    $(".Unhealthy-o").show();
+                    $(".Unhealthy-r").hide();
+                    $(".Unhealthy-p").hide();
+                    $(".Hazardous").hide();
                 } else if (s > 201 && s < 300) {
                     z = "Poor";
                     $('#severity').css("color", "#cc0033");
+                    $(".Good").hide();
+                    $(".Moderate").hide();
+                    $(".Unhealthy-o").hide();
+                    $(".Unhealthy-r").show();
+                    $(".Unhealthy-p").hide();
+                    $(".Hazardous").hide();
                 } else if (s > 301 && s < 400) {
                     z = "Very poor";
                     $('#severity').css("color", "#660099");
+                    $(".Good").hide();
+                    $(".Moderate").hide();
+                    $(".Unhealthy-o").hide();
+                    $(".Unhealthy-r").hide();
+                    $(".Unhealthy-p").show();
+                    $(".Hazardous").hide();
                 } else {
                     z = "Severe";
                     $('#severity').css("color", "#7e0023");
+                    $(".Good").hide();
+                    $(".Moderate").hide();
+                    $(".Unhealthy-o").hide();
+                    $(".Unhealthy-r").hide();
+                    $(".Unhealthy-p").hide();
+                    $(".Hazardous").show();
                 }
                 document.getElementById("severity").innerHTML = z;
-            }
+            
             var dVal = newval / 5;
             var newVal = dVal * 1.8 - 45;
             $('.circle-inner, .gauge-copy').css({
