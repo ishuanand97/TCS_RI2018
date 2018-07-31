@@ -444,6 +444,14 @@ select {
   margin: 20px;
 }
 
+#severity{
+  text-align: center;
+  margin: 20px;
+  font-size: 30px;
+  color:black;
+  font-weight: 600;
+  text-shadow: 3px 3px 11px rgba(150, 150, 150, 1);
+}
 /* gauge
  */
 
