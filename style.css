@@ -19,10 +19,13 @@ body {
   background: rgb(190, 231, 232);
   background: linear-gradient( 158deg, rgba(190, 231, 232, 1) 0%, rgba(255, 212, 201, 1) 55%);
 }
+
 ::-webkit-scrollbar {
   width: 0px;
-  background: transparent; /* make scrollbar transparent */
+  background: transparent;
+  /* make scrollbar transparent */
 }
+
 .mountain-scene {
   position: relative;
   height: 75%;
@@ -62,6 +65,7 @@ width = 1.41 x height(padding-bottom) */
 }
 
 /* polluted */
+
 .tri-p:before {
   content: "";
   position: absolute;
@@ -444,14 +448,15 @@ select {
   margin: 20px;
 }
 
-#severity{
+#severity {
   text-align: center;
-  margin: 20px;
+  margin: 40px 20px 20px ;
   font-size: 30px;
-  color:black;
+  color: black;
   font-weight: 600;
   text-shadow: 3px 3px 11px rgba(150, 150, 150, 1);
 }
+
 /* gauge
  */
 
@@ -529,7 +534,7 @@ select {
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
 .guage-holder {
   width: 220px;
-  margin: 70px auto 0;
+  margin: 50px auto 0;
   position: relative;
   text-align: center;
 }
@@ -629,11 +634,12 @@ select {
   height: 0;
 }
 
-.container{
+.container {
   overflow: auto;
 }
 
 /* 1.8deg = 1% */
+
 #legend-full-x table.infoaqitable {
   border: 1px solid black;
   width: 80%;
@@ -657,10 +663,22 @@ select {
   color: black;
 }
 
-table{
+table {
   margin-bottom: 50px !important;
   font-size: 15px !important;
 }
-td{
+
+td {
   padding: 3px 5px !important;
+}
+
+
+#loading{
+  margin: 0 auto;
+}
+
+#loading img{
+  display: block;
+  margin: auto;
+  width: 9%;
 }
