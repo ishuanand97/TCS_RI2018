@@ -8,7 +8,7 @@
   <title>AirCheck</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
@@ -132,34 +132,42 @@
           <tr style="background-color:#ffde33" class="aqibtxt Moderate">
             <td class="aqibtxt" nowrap="true">51 -100</td>
             <td class="aqibtxt">Moderate</td>
-            <td class="aqibtxt">Air quality is acceptable; however, for some pollutants there may be a moderate health concern for a very small
+            <td class="aqibtxt">Air quality is acceptable; however, for some pollutants there may be a moderate health
+              concern for a very small
               number of people who are unusually sensitive to air pollution.</td>
-            <td class="aqibtxt">Active children and adults, and people with respiratory disease, such as asthma, should limit prolonged outdoor
+            <td class="aqibtxt">Active children and adults, and people with respiratory disease, such as asthma, should
+              limit prolonged outdoor
               exertion.
             </td>
           </tr>
           <tr style="background-color:#ff9933;" class="aqibtxt Unhealthy-o">
             <td class="aqibtxt" nowrap="true">101-150</td>
             <td class="aqibtxt">Unhealthy for Sensitive Groups</td>
-            <td class="aqibtxt">Members of sensitive groups may experience health effects. The general public is not likely to be affected.</td>
-            <td class="aqibtxt">Active children and adults, and people with respiratory disease, such as asthma, should limit prolonged outdoor
+            <td class="aqibtxt">Members of sensitive groups may experience health effects. The general public is not
+              likely to be affected.</td>
+            <td class="aqibtxt">Active children and adults, and people with respiratory disease, such as asthma, should
+              limit prolonged outdoor
               exertion.
             </td>
           </tr>
           <tr style="background-color:#cc0033;" class="aqibtxt Unhealthy-r">
             <td class="aqiwtxt" nowrap="true">151-200</td>
             <td class="aqiwtxt">Unhealthy</td>
-            <td class="aqiwtxt">Everyone may begin to experience health effects; members of sensitive groups may experience more serious health
+            <td class="aqiwtxt">Everyone may begin to experience health effects; members of sensitive groups may
+              experience more serious health
               effects
             </td>
-            <td class="aqiwtxt">Active children and adults, and people with respiratory disease, such as asthma, should avoid prolonged outdoor
+            <td class="aqiwtxt">Active children and adults, and people with respiratory disease, such as asthma, should
+              avoid prolonged outdoor
               exertion; everyone else, especially children, should limit prolonged outdoor exertion</td>
           </tr>
           <tr style="background-color:#660099;" class="aqibtxt Unhealthy-p">
             <td class="aqiwtxt" nowrap="true">201-300</td>
             <td class="aqiwtxt">Very Unhealthy</td>
-            <td class="aqiwtxt">Health warnings of emergency conditions. The entire population is more likely to be affected.</td>
-            <td class="aqiwtxt">Active children and adults, and people with respiratory disease, such as asthma, should avoid all outdoor exertion;
+            <td class="aqiwtxt">Health warnings of emergency conditions. The entire population is more likely to be
+              affected.</td>
+            <td class="aqiwtxt">Active children and adults, and people with respiratory disease, such as asthma, should
+              avoid all outdoor exertion;
               everyone else, especially children, should limit outdoor exertion.</td>
           </tr>
           <tr style="background-color:#7e0023;" class="aqibtxt Hazardous">
@@ -170,6 +178,94 @@
           </tr>
         </tbody>
       </table>
+      
+  <!-- ........... -->
+  <div><h2 style="text-align:center;margin-bottom:15px">Gallery</h2></div>
+  <div class="row">
+    <div class="column">
+      <img src="tcs1.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="tcs2.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="tcs3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="tcs4.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+  </div>
+  
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="tcs1.png" style="width:100%">
+        <p style="padding-left:20%;padding-right:20%"><b>INSIGHTS:</b> <br>
+          <br>1.	Uttarakhand and Jammu & Kashmir have the highest sulfur content. This can be from the burning of fossil fuels (coal and oil) which is frequently done around the year in these states to stay warm in the cold <br>
+          <br>2.	 Bihar is also among one of the tops. The reason for the high content in Bihar can be coal mines and various industries because SO2 is produced from the smelting of mineral ores (aluminum, copper, zinc, lead, and iron) that contain sulfur. <br>  
+          <br>3.	The harmful effect of Sulphur dioxide is that it dissolves easily in water to form sulfuric acid. Sulfuric acid is a major component of acid rain. <br>
+          <br>
+        </p>
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="tcs2.png" style="width:100%">
+        <p style="padding-left:20%;padding-right:20%"><b>INSIGHTS:</b> <br>
+          <br>1.	West Bengal and Delhi have the highest content of NO2. Combustion of auto fuel and burning of fossil fuel releases NO2 in the air. Experts pointed out the high NO2 levels were owing to the rapid rise in car count and mushrooming of roadside eateries that burn coal and wood for fuel. 
+           <br>
+          <br>2.	Nitrogen dioxide is an important air pollutant because it contributes to the formation of photochemical smog, which can have significant impacts on human health. <br>
+          <br>
+        </p>
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="tcs3.png" style="width:100%">
+        <p style="padding-left:20%;padding-right:20%"><b>INSIGHTS:</b> <br>
+          <br>1.	Delhi has the highest Respirable Suspended Particulate matter. Due to urbanization, there is air pollution from vehicle emissions, industry, construction and residential fuel burning, but Delhi has an additional disadvantage of location. The heavy concentration of particulate matter is greatly affected by meteorological conditions –in the winter; cool air causes “inversions” that stagnant the air and trap pollution close to the ground. Airflow patterns from Afghanistan and Pakistan pick up emissions as they move over the densely urbanized regions of Punjab(highest RSPM after Delhi and UP) and Haryana where farmers burn the straw in their fields and pull this pollution into Delhi. Pre-monsoon dust storms also contribute to air pollution in the region. <br> 
+          <br>2.	Respirable suspended particulate matter, or <b> RSPM1</b> is a causative agent of mortality and morbidity. Small particles aggravate respiratory and cardiac symptoms in the short term and trigger lung cancer in the long term. <br>
+          <br>
+        </p>
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="tcs4.png" style="width:100%">
+        <p style="padding-left:20%;padding-right:20%"><b>INSIGHTS:</b> <br>
+          <br>1.	Delhi again has the highest content of SPM. Particulate matter is the sum of all solid and liquid particles suspended in air, many of which are hazardous. This complex mixture contains for instance dust, pollen, soot, smoke, and liquid droplets. Though many urbanized areas have high vehicle count and increasing roadside eateries burning fuels, Delhi is land-locked and hardly has any air movement. This is the reason the level is quite often thrice or more time the level of national standards. <br>  
+          <br>2.	Since they are so small and light, fine particles tend to stay longer in the air than heavier particles. Fine particles are also known to trigger or worsen chronic diseases such as asthma, heart attack, bronchitis and other respiratory problems. <br>
+          <br>
+        </p>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <div class="row" style="overflow:hidden; padding:1%">
+      <div class="column">
+        <img class="demo cursor" src="tcs1.png" style="width:100%" onclick="currentSlide(1)" alt="Average SO2 content of various states">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="tcs2.png" style="width:100%" onclick="currentSlide(2)" alt="Average NO2 content of various states">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="tcs3.png" style="width:100%" onclick="currentSlide(3)" alt="The Average RSPM content of various states">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="tcs4.png" style="width:100%" onclick="currentSlide(4)" alt="Average SPM content of various states">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ............ -->
     </div>
   </div>
 </body>
